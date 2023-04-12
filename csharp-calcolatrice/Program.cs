@@ -30,6 +30,13 @@
             Console.WriteLine($"Massimo tra due numeri interi: {massimoInteri}");
             Console.WriteLine($"Massimo tra due numeri double: {massimoDouble}");
 
+
+
+            int basePotenza =2;
+            int esponentePotenza = 2;
+            double potenza = CalcoliHelper.Potenza(basePotenza, esponentePotenza);
+            Console.WriteLine($"{basePotenza} elevato alla {esponentePotenza} = {potenza}");
+
         }
     }
 }

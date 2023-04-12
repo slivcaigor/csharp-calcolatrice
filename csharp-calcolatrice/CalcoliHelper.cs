@@ -5,13 +5,6 @@ using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
-BONUS:
-Aggiungete il metodo per l’elevamento a potenza che prende come parametri due numeri interi (base ed esponente) e ritorna la base elevata all’esponente. Occhio che sia la base che l’esponente potrebbero essere uguali a zero oppure numeri negativi!
-(caso esponente = 0 e base = 0 anche se in matematica sarebbe un numero indefinito usiamo l’approccio informatico che lo calcola come 1)
-*/
-
-
 namespace csharp_calcolatrice
 {
     //Il fatto di dover scrivere lo stesso metodo per tipi di parametro diversi applica nella pratica uno dei principi di programmazione ad oggetti che abbiamo visto oggi…Quale? Scrivetelo in un commento all’interno del codice! :faccia_nerd:
@@ -59,37 +52,111 @@ namespace csharp_calcolatrice
         // Valore assoluto di un numero intero
         public static int ValoreAssoluto(int a)
         {
-            return Math.Abs(a);
+            if (a < 0)
+            {
+                return -a;
+            }
+            else
+            {
+                return a;
+            }
         }
 
         // Valore assoluto di un numero double
         public static double ValoreAssoluto(double a)
         {
-            return Math.Abs(a);
+            if (a < 0)
+            {
+                return -a;
+            }
+            else
+            {
+                return a;
+            }
         }
 
         // Minimo tra due numeri interi
         public static int Minimo(int a, int b)
         {
-            return Math.Min(a, b);
+            if (a < b)
+            {
+                return a;
+            }
+            else
+            {
+                return b;
+            }
         }
 
         // Minimo tra due numeri double
         public static double Minimo(double a, double b)
         {
-            return Math.Min(a, b);
+            if (a < b)
+            {
+                return a;
+            }
+            else
+            {
+                return b;
+            }
         }
 
         // Massimo tra due numeri interi
         public static int Massimo(int a, int b)
         {
-            return Math.Max(a, b);
+            if (a > b)
+            {
+                return a;
+            }
+            else
+            {
+                return b;
+            }
         }
 
         // Massimo tra due numeri double
         public static double Massimo(double a, double b)
         {
-            return Math.Max(a, b);
+            if (a > b)
+            {
+                return a;
+            }
+            else
+            {
+                return b;
+            }
         }
+
+
+        // Bonus (non mi convince)
+        //public static double Potenza(int b, int e)
+        //{
+        //    if (e == 0 && b == 0)
+        //    {
+        //        return 1;
+        //    }
+        //    else if (b == 0)
+        //    {
+        //        return 0;
+        //    }
+        //    else if (e == 0)
+        //    {
+        //        return 1;
+        //    }
+        //    else if (e < 0)
+        //    {
+        //        return -1;
+        //    }
+        //    else
+        //    {
+        //        int result = 1;
+        //        for (int i = 0; i < e; i++)
+        //        {
+        //            result *= b;
+        //        }
+        //        return result;
+        //    }
+        //}
+
     }
 }
