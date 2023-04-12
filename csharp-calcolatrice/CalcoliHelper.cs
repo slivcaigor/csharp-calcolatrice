@@ -129,34 +129,34 @@ namespace csharp_calcolatrice
 
 
         // Bonus (non mi convince)
-        //public static double Potenza(int b, int e)
-        //{
-        //    if (e == 0 && b == 0)
-        //    {
-        //        return 1;
-        //    }
-        //    else if (b == 0)
-        //    {
-        //        return 0;
-        //    }
-        //    else if (e == 0)
-        //    {
-        //        return 1;
-        //    }
-        //    else if (e < 0)
-        //    {
-        //        return -1;
-        //    }
-        //    else
-        //    {
-        //        int result = 1;
-        //        for (int i = 0; i < e; i++)
-        //        {
-        //            result *= b;
-        //        }
-        //        return result;
-        //    }
-        //}
+        public static int Potenza(int b, int e)
+        {
+            if (e == 0 && b == 0)
+            {
+                return 1;
+            }
+            else if (b == 0)
+            {
+                return 0;
+            }
+            else if (e == 0)
+            {
+                return 1;
+            }
+            else if (e < 0)
+            {
+                return -1;
+            }
+            else
+            {
+                int result = 1;
+                for (int i = 0; i < e; i++)
+                {
+                    result *= b;
+                }
+                return result;
+            }
+        }
 
     }
 }
