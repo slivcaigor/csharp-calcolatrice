@@ -128,8 +128,8 @@ namespace csharp_calcolatrice
         }
 
 
-        // Bonus (non mi convince)
-        public static int Potenza(int b, int e)
+        // Bonus (non è possibile rappresentare questa frazione come un numero intero quindi uso double)
+        public static double Potenza(double b, int e)
         {
             if (e == 0 && b == 0)
             {
@@ -145,11 +145,11 @@ namespace csharp_calcolatrice
             }
             else if (e < 0)
             {
-                return -1;
+                return 1 / Potenza(b, -e);
             }
             else
             {
-                int result = 1;
+                double result = 1;
                 for (int i = 0; i < e; i++)
                 {
                     result *= b;

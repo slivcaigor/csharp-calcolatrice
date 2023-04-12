@@ -33,7 +33,7 @@
 
 
             int basePotenza =2;
-            int esponentePotenza = 2;
+            int esponentePotenza = -5;
             double potenza = CalcoliHelper.Potenza(basePotenza, esponentePotenza);
             Console.WriteLine($"{basePotenza} elevato alla {esponentePotenza} = {potenza}");
 
