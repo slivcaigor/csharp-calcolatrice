@@ -5,20 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 /*
- Creare una classe di helper CalcoliHelper.
- Come visto a lezione, strutturare la classe in modo che non possa essere istanziata e che presenti i seguenti metodi `static`:
-- Somma di due numeri interi
-- Somma di due numeri double
-- Differenza tra due numeri interi
-- Differenza tra due numeri double
-- Moltiplicazione di due numeri interi
-- Moltiplicazione di due numeri double
-- Valore assoluto di un numero intero
-- Valore assoluto di un numero double
-- Minimo tra due numeri interi
-- Minimo tra due numeri double
-- Massimo tra due numeri interi
-- Massimo tra due numeri double
 Il fatto di dover scrivere lo stesso metodo per tipi di parametro diversi applica nella pratica uno dei principi di programmazione ad oggetti che abbiamo visto oggi…Quale? Scrivetelo in un commento all’interno del codice! :faccia_nerd:
 Testate tutti i metodi della vostra classe di helper (con un esempio per ogni casistica).
 BONUS:
@@ -31,6 +17,77 @@ namespace csharp_calcolatrice
 {
     public class CalcoliHelper
     {
-        //codice
+        // Somma di due numeri interi
+        public static int Somma(int a, int b)
+        {
+            return a + b;
+        }
+
+        // Somma di due numeri double
+        public static double Somma(double a, double b)
+        {
+            return a + b;
+
+        }
+
+        // Differenza tra due numeri interi
+        public static int Differenza(int a, int b)
+        {
+            return a - b;
+        }
+
+        // Differenza tra due numeri double
+        public static double Differenza(double a, double b)
+        {
+            return a - b;
+        }
+
+        // Moltiplicazione di due numeri interi
+        public static int Moltiplicazione(int a, int b)
+        {
+            return a * b;
+        }
+
+        // Moltiplicazione di due numeri double
+        public static double Moltiplicazione(double a, double b)
+        {
+            return a * b;
+        }
+
+        // Valore assoluto di un numero intero
+        public static int ValoreAssoluto(int a)
+        {
+            return Math.Abs(a);
+        }
+
+        // Valore assoluto di un numero double
+        public static double ValoreAssoluto(double a)
+        {
+            return Math.Abs(a);
+        }
+
+        // Minimo tra due numeri interi
+        public static int Minimo(int a, int b)
+        {
+            return Math.Min(a, b);
+        }
+
+        // Minimo tra due numeri double
+        public static double Minimo(double a, double b)
+        {
+            return Math.Min(a, b);
+        }
+
+        // Massimo tra due numeri interi
+        public static int Massimo(int a, int b)
+        {
+            return Math.Max(a, b);
+        }
+
+        // Massimo tra due numeri double
+        public static double Massimo(double a, double b)
+        {
+            return Math.Max(a, b);
+        }
     }
 }
