@@ -129,7 +129,7 @@ namespace csharp_calcolatrice
 
 
         // Bonus (non è possibile rappresentare questa frazione come un numero intero quindi uso double)
-        public static double Potenza(double b, int e)
+        public static double Potenza(int b, int e)
         {
             if (e == 0 && b == 0)
             {
